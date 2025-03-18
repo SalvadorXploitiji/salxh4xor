@@ -13,6 +13,6 @@
     "chalk": "^4.1.2",
     "figlet": "^1.5.2",
     "gradient-string": "^2.0.1",
-    "puppeteer": "^21.3.8"
+   "puppeteer": "^10.4.0"
   }
 }
