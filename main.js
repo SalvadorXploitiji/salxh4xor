@@ -6,7 +6,7 @@ console.clear();
 
 // ASCII Art Logo
 console.log(chalk.redBright(`
-  ███████╗ █████╗ ██╗     ██╗  ██╗
+███████╗ █████╗ ██╗     ██╗  ██╗
 ██╔════╝██╔══██╗██║     ╚██╗██╔╝
 ███████╗███████║██║      ╚███╔╝ 
 ╚════██║██╔══██║██║      ██╔██╗ 
@@ -15,13 +15,8 @@ console.log(chalk.redBright(`
 `));
 
 // Tampilan Header
-console.log(gradient.pastel(boxen("[+] SALX-H4XOR TOOLS v1.00 [+]", {
-    padding: 1,
-    margin: 1,
-    borderStyle: "double",
-    borderColor: "red",
-    align: "center"
-})));
+
+
 
 // Informasi Developer
 console.log(chalk.yellow.bold(" Author : ") + chalk.cyanBright("SALX TEAM"));
@@ -31,12 +26,12 @@ console.log("\n");
 
 // List Fitur
 const features = [
-    { id: "01", name: "LOGS", status: "ON" },
+    { id: "01", name:"LOGS", status:                  "ON" },
     { id: "02", name: "WEB DEFACE GENERATOR", status: "ON" },
-    { id: "03", name: "DEFACEMENT", status: "ON" },
-    { id: "04", name: "WEB SHELL", status: "ON" },
-    { id: "05", name: "DOXING", status: "ON" },
-    { id: "06", name: "WEBSITE TEMPLATE", status: "ON" },
+    { id: "03", name: "DEFACEMENT", status:           "ON" },
+    { id: "04", name: "WEB SHELL", status:            "ON" },
+    { id: "05", name: "DOXING", status:               "ON" },
+    { id: "06", name: "WEBSITE TEMPLATE", status:     "ON" },
 ];
 
 // Tampilkan dalam bentuk kotak
