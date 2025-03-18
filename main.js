@@ -2,51 +2,46 @@ import boxen from "boxen";
 import chalk from "chalk";
 import gradient from "gradient-string";
 
-console.clear();
+// Fungsi untuk membuat kotak dengan panjang tetap
+function createBox(number, title, status) {
+    const text = `{${number}}  {${title}}  {${status}}`;
+    return boxen(text, {
+        padding: 1,
+        margin: 0,
+        borderStyle: "round",
+        borderColor: "red",
+        width: 40, // Pastikan semua kotak memiliki lebar yang sama
+        align: "center"
+    });
+}
 
-// ASCII Art Logo
-console.log(chalk.redBright(`
+// Teks logo
+const logo = gradient.mind(`
 ███████╗ █████╗ ██╗     ██╗  ██╗
-██╔════╝██╔══██╗██║     ╚██╗██╔╝
-███████╗███████║██║      ╚███╔╝ 
-╚════██║██╔══██║██║      ██╔██╗ 
-███████║██║  ██║███████╗██╔╝ ██╗
-╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
-`));
+██╔════╝██╔══██╗██║      ╚██╗██╔╝
+███████╗███████║██║       ╚███╔╝ 
+╚════██║██╔══██║██║       ██╔██╗ 
+███████║██║  ██║███████╗ ██╔╝ ██╗
+╚══════╝╚═╝  ╚═╝╚══════╝ ╚═╝  ╚═╝
+`);
 
-// Tampilan Header
+console.log(logo);
+console.log(chalk.yellow("Author : ") + chalk.cyan("SALX TEAM"));
+console.log(chalk.yellow("Telegram : ") + chalk.cyan("@SALX_BOT"));
+console.log(chalk.yellow("GitHub : ") + chalk.cyan("github.com/SALX"));
+console.log("");
 
-
-
-// Informasi Developer
-console.log(chalk.yellow.bold(" Author : ") + chalk.cyanBright("SALX TEAM"));
-console.log(chalk.yellow.bold(" Telegram : ") + chalk.cyanBright("@SALX_BOT"));
-console.log(chalk.yellow.bold(" GitHub : ") + chalk.cyanBright("github.com/SALX"));
-console.log("\n");
-
-// List Fitur
-const features = [
-    { id: "01", name:"LOGS", status:                  "ON" },
-    { id: "02", name: "WEB DEFACE GENERATOR", status: "ON" },
-    { id: "03", name: "DEFACEMENT", status:           "ON" },
-    { id: "04", name: "WEB SHELL", status:            "ON" },
-    { id: "05", name: "DOXING", status:               "ON" },
-    { id: "06", name: "WEBSITE TEMPLATE", status:     "ON" },
+// Daftar menu dengan kotak yang seragam
+const menu = [
+    createBox("01", "LOGS", "ON"),
+    createBox("02", "WEB DEFACE GENERATOR", "ON"),
+    createBox("03", "DEFACEMENT", "ON"),
+    createBox("04", "WEB SHELL", "ON"),
+    createBox("05", "DOXING", "ON"),
+    createBox("06", "WEBSITE TEMPLATE", "ON")
 ];
 
-// Tampilkan dalam bentuk kotak
-features.forEach(feature => {
-    console.log(boxen(
-        `${chalk.red(`{${feature.id}}`)}  ${chalk.greenBright.bold(`{${feature.name}}`)}  ${chalk.yellow(`{${feature.status}}`)}`,
-        {
-            padding: 1,
-            margin: 0.3,
-            borderStyle: "round",
-            borderColor: "red"
-        }
-    ));
-});
+menu.forEach(item => console.log(item));
 
-// Tampilan Footer
 console.log(chalk.blueBright("\n>>> Gunakan dengan bijak! <<<"));
-console.log(chalk.gray("SALX-H4XOR TOOLS v1.00 - Created by SALX TEAM\n"));
+console.log(chalk.gray("SALX-H4XOR TOOLS v1.00 - Created by SALX TEAM"));
