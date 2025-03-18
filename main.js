@@ -1,6 +1,16 @@
-import boxen from "boxen";
-import chalk from "chalk";
-import gradient from "gradient-string";
+const readline = require("readline");
+const figlet = require("figlet");
+const gradient = require("gradient-string");
+const chalk = require("chalk");
+const boxen = require("boxen");
+const { uploadDeface } = require("./function/web_deface");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+// Tampilka
 
 // Fungsi untuk membuat kotak dengan warna
 function createBox(number, title, status) {
