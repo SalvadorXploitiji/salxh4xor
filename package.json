@@ -1,17 +1,18 @@
 {
-  "name": "salx-h4xor-tools",
+  "name": "salxh4xor-tools",
   "version": "1.0.0",
-  "description": "SALX-H4XOR TOOLS v1.00",
-  "type": "module",
-  "main": "index.js",
+  "description": "SALX-H4XOR TOOLS v1.00 - Created by SALX TEAM",
+  "main": "main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node main.js"
   },
+  "author": "SALX TEAM",
+  "license": "MIT",
   "dependencies": {
-    "boxen": "^7.0.0",
+    "boxen": "^7.1.1",
     "chalk": "^4.1.2",
-    "gradient-string": "^2.0.1"
-  },
-  "author": "SALX",
-  "license": "MIT"
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.1",
+    "puppeteer": "^21.3.8"
+  }
 }
